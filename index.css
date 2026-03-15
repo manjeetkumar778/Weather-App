@@ -1,0 +1,165 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0a5da5, #131f20);
+    font-family: Arial, sans-serif;
+}
+
+.weather-app {
+    height: 70-0px;
+    width: 50%;
+    max-width: 95%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+.error-message {
+    display: none;
+    margin-top: 15px;
+    color: #ffdddd;
+    background: rgba(255, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.default-message {
+    margin-top: 20px;
+    opacity: 0.9;
+}
+
+.default-message .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.weather-info {
+    display: none;
+    margin-top: 20px;
+}
+
+.city-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 14px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.weather-icon {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.temperature {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.description {
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.detail-box {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.detail-box .icon {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.detail-box .value {
+    font-weight: bold;
+}
+
+.detail-box .label {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+
+.forecast {
+    margin-top: 25px;
+    text-align: left;
+}
+
+.forecast h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.forecast-cards {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+}
+
+.forecast-card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    padding: 12px;
+    border-radius: 15px;
+    flex: 0 0 80px;
+    min-width: 80px;
+    text-align: center;
+}
+
+.forecast-card .day {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.forecast-card .icon {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.forecast-card .temp {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.search-box input{
+   height: 30px;
+   width: 50%
+}
+
+#searchBtn{
+    height: 30px;
+    width: 15%;
+    font-size: 16px;
+    border: 2px solid black;
+}

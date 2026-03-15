@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div class="weather-app">
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Enter city name..." autocomplete="off">
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <div class="loading" id="loading">
+                <div class="loading-spinner"></div>
+                <p>Loading weather data...</p>
+            </div>
+
+            <div class="error-message" id="errorMessage">
+                <p>City not found. Please try again.</p>
+            </div>
+
+            <div class="default-message" id="defaultMessage">
+                <div class="icon">🌤️</div>
+                <p>Enter a city name to get weather information</p>
+            </div>
+
+            <div class="weather-info" id="weatherInfo">
+                <div class="city-name" id="cityName">City Name</div>
+                <div class="date" id="date">Date</div>
+                <div class="weather-icon" id="weatherIcon">☀️</div>
+                <div class="temperature"><span id="temperature">0</span><span>°C</span></div>
+                <div class="description" id="description">Clear sky</div>
+
+                <div class="weather-details">
+                    <div class="detail-box">
+                        <div class="icon">💧</div>
+                        <div class="value" id="humidity">0%</div>
+                        <div class="label">Humidity</div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="icon">💨</div>
+                        <div class="value" id="windSpeed">0 km/h</div>
+                        <div class="label">Wind Speed</div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="icon">🌅</div>
+                        <div class="value" id="sunrise">--:--</div>
+                        <div class="label">Sunrise</div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="icon">🌇</div>
+                        <div class="value" id="sunset">--:--</div>
+                        <div class="label">Sunset</div>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast" id="forecast">
+                <h3>5-Day Forecast</h3>
+                <div class="forecast-cards" id="forecastCards"></div>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+
+</html>
